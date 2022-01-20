@@ -1,11 +1,13 @@
 #include<iostream>
 using namespace std;
 
+// Sum of two numbers
 int sum(int a, int b)
 {
     return a+b;
 }
 
+// Sum of three numbers
 int sum(int a, int b, int c)
 {
     return a+b+c;
@@ -36,6 +38,6 @@ int main()
     cout<<"The volume of cuboid of parameters 4, 5 and 6 is "<<volume(4, 5, 6)<<endl;
     cout<<"The volume of cube of parameters 5 is "<<volume(5)<<endl;
     cout<<"The volume of cylinder of parameters 4 and 6 is "<<volume(4, 6)<<endl;
-    
+
     return 0;
 }
