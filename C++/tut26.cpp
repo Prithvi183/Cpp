@@ -10,6 +10,7 @@ class complex
                 b = n2;
         }
 
+        //Below line means that non member - sumComplex function is allowed to do anything with class private members.
         friend complex sumComplex(complex o1, complex o2);
 
         void printNumber(){
@@ -38,3 +39,13 @@ int main()
     return 0;
 }
 
+/* Properties of Freind functions
+
+1. Not int the scope of class.
+2. Since it is not in the scope of class, it cannot be called from object of that class. i.e: c1.sumComplex() == invalid.
+3. Can be invoked without any help of the objects.
+4. Usually contains the object as arguments.
+5. Can be declared inside the section of private or public class.
+6. It cannot access the members directly by their names and need object_name.member_name to access any member.
+
+*/
