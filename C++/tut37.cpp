@@ -1,18 +1,18 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 // Base Class
-class Employee 
+class Employee
 {
-    public:
+public:
     int id;
     float salary;
-        Employee(){}
-        Employee(int inpid)
-        {
-            id = inpid;
-            salary = 34;
-        }
+    Employee() {}
+    Employee(int inpid)
+    {
+        id = inpid;
+        salary = 34;
+    }
 };
 
 // Derived Class Syntax
@@ -29,27 +29,29 @@ Note:
 */
 
 // Createing a Programmer class derived from Employee base class.
-class Programmer : public Employee{
-        public:
-        Programmer(int inpid){
-            id = inpid;
-
-        }
-        int languageCode= 9;
-        void getData()
-        {
-            cout<<id<<endl;
-        }
+class Programmer : public Employee
+{
+public:
+    int languageCode;
+    Programmer(int inpid)
+    {
+        id = inpid;
+        languageCode = 9;
+    }
+    void getData()
+    {
+        cout << id << endl;
+    }
 };
 
 int main()
 {
     Employee prithvi(1), shivam(2);
-    cout<<prithvi.salary<<endl;
-    cout<<shivam.salary<<endl;
+    cout << prithvi.salary << endl;
+    cout << shivam.salary << endl;
     Programmer skillF(10);
-    cout<<skillF.languageCode<<endl;
+    cout << skillF.languageCode << endl;
     skillF.getData();
-    cout<<skillF.id<<endl;
+    cout << skillF.id << endl;
     return 0;
-} 
+}
