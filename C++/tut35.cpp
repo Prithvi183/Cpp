@@ -18,7 +18,7 @@ class num{
 };
 
 int main()
-{
+{  
     cout<<"We are inside our main function."<<endl;
     cout<<"Creating First object n1."<<endl;
     num n1;
