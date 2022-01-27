@@ -25,7 +25,7 @@ using namespace std;
         return data2;
     }
 
-    class Derived : public Base
+    class Derived : private Base
     { // Class is being derived publically
         int data3;
 
@@ -37,6 +37,7 @@ using namespace std;
 
     void Derived :: process()
     {
+        setData();
         data3 = data2 * getData1();
     }
 
@@ -50,7 +51,7 @@ using namespace std;
 int main()
 {
     Derived der;
-    der.setData();
+    // der.setData();   //This will throw error bcoz setData() is private member of derived class.
     der.process();
     der.display();
 
