@@ -33,37 +33,44 @@ public:
         maths = m1;
         physics = m2;
     }
-    void get_marks(){
-        cout<<"Your result is here: "<<endl
-            <<"Maths: "<<maths<<endl
-            <<"Physics: "<<physics<<endl;
+    void get_marks()
+    {
+        cout << "Your result is here: " << endl
+            << "Maths: " << maths << endl
+            << "Physics: " << physics << endl;
     }
 };
 
-class Sports : virtual public Student{
-    protected:
+class Sports : virtual public Student
+{
+protected:
     float score;
-    public:
-    void set_score(float sc){
+
+public:
+    void set_score(float sc)
+    {
         score = sc;
     }
-    void get_score(){
-        cout<<"Your PT score is "<<score<<endl;
+    void get_score()
+    {
+        cout << "Your PT score is " << score << endl;
     }
 };
 
-class Result : public Test, public Sports{
-    private:
+class Result : public Test, public Sports
+{
+private:
     float total;
-    public:
-    void display(){
-    total = maths + physics + score;
+
+public:
+    void display()
+    {
+        total = maths + physics + score;
         print_number();
         get_marks();
         get_score();
-        cout<<"Your total score is "<<total<<endl;
+        cout << "Your total score is " << total << endl;
     }
-
 };
 
 int main()
