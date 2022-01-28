@@ -18,15 +18,33 @@ class A: public B, virtual public C{
 };
 */
 
-class Base
+class Base1
 {
-    int data;
+    int data1;
 
 public:
-    Base(int i)
+    Base1(int i)
     {
-        data = i;
-        cout << "Base class constructor is called." << endl;
+        data1 = i;
+        cout << "Base1 class constructor is called." << endl;
+    }
+    void print_data(){
+        cout<<"The value of the data1 is "<<data1<<endl;
+    }
+};
+
+class Base2
+{
+    int data2;
+
+public:
+    Base2(int i)
+    {
+        data2 = i;
+        cout << "Base2 class constructor is called." << endl;
+    }
+    void print_data(){
+        cout<<"The value of the data2 is "<<data2<<endl;
     }
 };
 
