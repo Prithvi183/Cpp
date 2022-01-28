@@ -28,7 +28,7 @@ public:
         data1 = i;
         cout << "Base1 class constructor is called." << endl;
     }
-    void print_data(){
+    void print_data1(){
         cout<<"The value of the data1 is "<<data1<<endl;
     }
 };
@@ -43,9 +43,23 @@ public:
         data2 = i;
         cout << "Base2 class constructor is called." << endl;
     }
-    void print_data(){
+    void print_data2(){
         cout<<"The value of the data2 is "<<data2<<endl;
     }
+};
+
+class Derived : public Base1, public Base2{
+        int derived1, derived2;
+        public:
+        Derived(int a, int b, int c, int d) : Base1(a), Base2(b){
+            derived1 = c;
+            derived2 = d;
+            cout<<"Derived class constructor called."<<endl;
+        }
+        void display(){
+            cout<<"The value of derived1 is"<<derived1<<endl;
+            cout<<"The value of derived2 is"<<derived2<<endl;
+        }
 };
 
 int main()
