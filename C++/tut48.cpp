@@ -57,13 +57,17 @@ class Derived : public Base1, public Base2{
             cout<<"Derived class constructor called."<<endl;
         }
         void display(){
-            cout<<"The value of derived1 is"<<derived1<<endl;
-            cout<<"The value of derived2 is"<<derived2<<endl;
+            cout<<"The value of derived1 is "<<derived1<<endl;
+            cout<<"The value of derived2 is "<<derived2<<endl;
         }
 };
 
 int main()
 {
+    Derived prithvi(1, 2, 3, 4);
+    prithvi.print_data1();
+    prithvi.print_data2();
+    prithvi.display();
 
     return 0;
 }
