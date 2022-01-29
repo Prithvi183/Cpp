@@ -17,7 +17,13 @@ class Complex{
 int main()
 {
     Complex c;
+    // Complex *ptr = &c;
+    Complex *ptr = new Complex;
     c.set_data(4, 6);
     c.get_data();
+    // (*ptr).set_data(40, 60); is exactly same as
+    ptr->set_data(40, 60);
+    // (*ptr).get_data(); is exactly same as
+    ptr->get_data();
     return 0;
 }
