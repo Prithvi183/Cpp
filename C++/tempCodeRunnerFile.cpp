@@ -1,7 +1,2 @@
-#include <iostream>
-using namespace std;
-
-/*
-Syntax for initialization list in constructor:
-constructor (arguments-list) : initialization list
-{
+in>>st>>st2;
+    // cout<<st<<st2;
