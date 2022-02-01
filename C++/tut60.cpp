@@ -17,10 +17,17 @@ Primilarily, there are two ways to open a file:
 int main()
 {
     string st = "This is a sample file for a tutorial in C++.";
-    
-    // Opening files using constructor and reading it.
+    string st2;
+
+    // Opening files using constructor and writing it.
     ofstream out("sample60.txt"); //Write operation
     out<<st;
+
+    // Opening files using constructor and reading it.
+    ifstream in("sample60b.txt"); //Write operation
+    in>>st2;
+    cout<<st2;
+    
 
     return 0;
 }
