@@ -18,16 +18,16 @@ int main()
 {
     string st = "This is a sample file for a tutorial in C++.";
     string st2;
-
+    
     // Opening files using constructor and writing it.
     ofstream out("sample60.txt"); //Write operation
     out<<st;
 
     // Opening files using constructor and reading it.
     ifstream in("sample60b.txt"); //Write operation
-    in>>st2;
+    // in>>st2; // This will only read 1st letter of the file.
+    getline(in, st2);
     cout<<st2;
-    
 
     return 0;
 }
