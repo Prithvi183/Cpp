@@ -1,2 +1,2 @@
-in>>st>>st2;
-    // cout<<st<<st2;
+
+    // myClass <int, float> obj(3,
