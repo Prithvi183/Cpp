@@ -24,7 +24,13 @@ class prithvi{
 
 int main()
 {
-    prithvi<> p(4, 4.5, 'p');
+    prithvi<> p(4, 4.5, 'P');
     p.display();
+    cout<<endl;
+    
+    prithvi<char, int, float> s('S', 10, 3.14);
+    s.display();
+
+
     return 0;
 }
