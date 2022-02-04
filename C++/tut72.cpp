@@ -14,6 +14,8 @@ int main()
 
     list<int> :: iterator iter;
     iter = list1.begin();
-    
+    cout<<*iter<<endl;
+    iter++;
+    cout<<*iter<<endl;
     return 0;
 }
