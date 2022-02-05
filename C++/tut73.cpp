@@ -12,12 +12,16 @@ int main()
     marksMap["rahul"] = 88;
     marksMap["rohan"] = 78;
 
+    marksMap.insert({{"Kozume", 169}, {"Kuroo", 187}});
     map <string, int> :: iterator iter;
     for (iter = marksMap.begin(); iter != marksMap.end(); iter++)
     {
-        /* code */
+        cout<<(*iter).first<<" "<<(*iter).second<<endl;
     }
     
+    cout<<"The size value is: "<<marksMap.size()<<endl;
+    cout<<"The Max size value is: "<<marksMap.max_size()<<endl;
+    cout<<"The Empty's return value is: "<<marksMap.empty()<<endl;
 
     return 0;
 }
