@@ -17,12 +17,13 @@ int main()
     arr[0]=10;
     *(arr+1)=20;  // <--> Also written this way
     arr[2]=30;
+    
+    // Delete operator
     // delete[] arr;
     cout<<"The value at address arr[0] is "<<arr[0]<<endl;
     cout<<"The value at address arr[1] is "<<arr[1]<<endl;
     cout<<"The value at address arr[2] is "<<arr[2]<<endl;
 
-    // Delete operator
 
     return 0;
 }
