@@ -9,7 +9,7 @@ class Base{
 };
 /*
 For a protected member:
-                                Public Derivation   Private derivation   Protected derivation
+                                Public Derivation   Private derivation   Protected deriv+- ation
         1. Private members.     Not Inherited       Not Inherited        Not Inherited   
         2. Protected members.   Private             Private              Protected
         3. Public members.      Public              Private              Protected

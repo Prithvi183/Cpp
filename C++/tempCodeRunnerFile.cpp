@@ -1,2 +1,0 @@
-iter++;
-    cout<<*iter<<endl;
