@@ -8,12 +8,15 @@ int main()
     float pi = 3.14;
     char c = 'p';
     bool is_true = true;
+    double d = 10.213458796;
+
     cout << "This is tutorial 4." << endl
          << "The value of a is " << a << endl
          << "The value of b is " << b << endl;
     cout << "The value of pi is " << pi << endl;
     cout << "The character is " << c << endl;
     cout << "The value for true is " << is_true << endl;
+    cout << "The value of d is " << d << endl;
     return 0;
 }
 
