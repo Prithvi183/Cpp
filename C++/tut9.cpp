@@ -1,3 +1,10 @@
+/* C++ Control Structures, If Else and Switch-Case Statement.
+    Types of Control Structures
+        1) Sequence structure.
+        2) Selection structure. (If-Else or Switch Case)
+        3) Loop Structure. (For, While, Do-while)
+*/
+
 #include <iostream>
 using namespace std;
 
